@@ -13,9 +13,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultsLabel: UILabel!
     
-    var result = Float()
-    var currentNumber = Float()
+    var result = Double()
+    var currentNumber = Double()
     var currentOp = String()
+    let pi = Double.pi
     
     
     
@@ -26,8 +27,14 @@ class ViewController: UIViewController {
         resultsLabel.text = ("\(result)")
     }
     
+    @IBAction func piPressed(_ sender: UIButton) {
+        currentNumber = pi
+        resultsLabel.text = ("\(currentNumber)")
+    }
+    
+    
     @IBAction func NumberPressed(_ sender: UIButton) {
-        currentNumber = currentNumber * 10 + Float(sender.titleLabel!.text!)!
+        currentNumber = currentNumber * 10 + Double(sender.titleLabel!.text!)!
         resultsLabel.text = ("\(currentNumber)")
     }
     
@@ -44,6 +51,14 @@ class ViewController: UIViewController {
             result = result / currentNumber
         case "*":
             result = result * currentNumber
+        case "cos":
+            result = cos(currentNumber)
+        case "sin":
+            result = sin(currentNumber)
+        case "sqrt":
+            result = sqrt(currentNumber)
+        case "%":
+            result = result * 0.01
         default:
             print("what did you do?!")
         }
