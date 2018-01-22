@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0CB3DEB20159FAC006AB08D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB3DEA20159FAC006AB08D /* Calculator.swift */; };
 		C0E94C9F200A93BC00670865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E94C9E200A93BC00670865 /* AppDelegate.swift */; };
 		C0E94CA1200A93BC00670865 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E94CA0200A93BC00670865 /* ViewController.swift */; };
 		C0E94CA4200A93BC00670865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E94CA2200A93BC00670865 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0CB3DEA20159FAC006AB08D /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		C0E94C9B200A93BC00670865 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E94C9E200A93BC00670865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E94CA0200A93BC00670865 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0CB3DE620159AF8006AB08D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0E94CA0200A93BC00670865 /* ViewController.swift */,
+				C0E94C9E200A93BC00670865 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0CB3DE720159B61006AB08D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0E94CA5200A93BC00670865 /* Assets.xcassets */,
+				C0E94CA2200A93BC00670865 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0CB3DE820159B81006AB08D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C0E94CAA200A93BC00670865 /* Info.plist */,
+				C0E94CA7200A93BC00670865 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C0CB3DE920159B99006AB08D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0CB3DEA20159FAC006AB08D /* Calculator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C0E94C92200A93BB00670865 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +91,10 @@
 		C0E94C9D200A93BC00670865 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				C0E94C9E200A93BC00670865 /* AppDelegate.swift */,
-				C0E94CA0200A93BC00670865 /* ViewController.swift */,
-				C0E94CA2200A93BC00670865 /* Main.storyboard */,
-				C0E94CA5200A93BC00670865 /* Assets.xcassets */,
-				C0E94CA7200A93BC00670865 /* LaunchScreen.storyboard */,
-				C0E94CAA200A93BC00670865 /* Info.plist */,
+				C0CB3DE620159AF8006AB08D /* Controller */,
+				C0CB3DE920159B99006AB08D /* Model */,
+				C0CB3DE720159B61006AB08D /* View */,
+				C0CB3DE820159B81006AB08D /* SupportingFiles */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -138,6 +173,7 @@
 			files = (
 				C0E94CA1200A93BC00670865 /* ViewController.swift in Sources */,
 				C0E94C9F200A93BC00670865 /* AppDelegate.swift in Sources */,
+				C0CB3DEB20159FAC006AB08D /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Calculator/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zach.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Calculator/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zach.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
