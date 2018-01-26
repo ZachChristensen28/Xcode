@@ -11,7 +11,7 @@ import Foundation
 class Calculator {
     
     var result : Double
-    var currentNumber : Double
+    var currentNumber : Double 
     var currentOp : String
     var isDecimal : Bool
     var decimalPointer : Double
@@ -25,16 +25,11 @@ class Calculator {
         decimalPointer = 0.1
     }
     
-    func getResult() -> Double {
-        return result
-    }
+    //TODO: remove getters and setters and do it the swift way
+    
     
     func setResult(result: Double) {
         self.result = result
-    }
-    
-    func getCurrentNumber() -> Double {
-        return currentNumber
     }
     
     func setDecimalTrue() {
@@ -52,10 +47,6 @@ class Calculator {
         } else {
             self.currentNumber = self.currentNumber * 10 + currentNumber
         }
-    }
-    
-    func getCurrentOp() -> String {
-        return currentOp
     }
     
     func setCurrentOp(currentOp: String) {
