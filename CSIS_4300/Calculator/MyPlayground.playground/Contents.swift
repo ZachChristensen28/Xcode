@@ -21,3 +21,8 @@ x = 0.10
 x *= 0.10
 x *= 0.10
 
+var string = "1+2+3*5"
+var char = Array(string)
+
+
+
