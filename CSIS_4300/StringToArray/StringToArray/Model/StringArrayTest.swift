@@ -8,5 +8,8 @@
 
 import Foundation
 
-var string = "1+2*3.4"
-var x = StringArray(string: string)
+let problem = StringArray(string: "1533.2+26.7173-1.4964+5715.99+1.92565")
+
+
+let x = problem.evString()
+var y = problem.arrayToAnswer(theArray: x)
