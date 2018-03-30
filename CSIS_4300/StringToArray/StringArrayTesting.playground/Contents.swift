@@ -1,4 +1,5 @@
-//: Playground - noun: a place where people can play
+// Zach Christensen
+// Calculator Helper Functions
 
 import Foundation
 
@@ -86,10 +87,10 @@ func arrayToAnswer(theArray: Array<String>)->Array<String> {
     return resultArray
 }
 
-let problem = evString(theString: "1533.2+26.7173-1.4964+5715.99+1.92565")
+let problem = evString(theString: "677.311+5.8661+84.07-1759.2+28.931+79.962-7.92063")
 let solution = arrayToAnswer(theArray: problem)
-print("Equation: \(problem)")
-print("Result: \(solution)")
+print("Problem: \(problem)")
+print("Solution: \(solution)")
 
 
 

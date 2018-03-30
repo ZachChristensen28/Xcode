@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1VJ-FH-jp1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LaoSangamMN.ttf">
+            <string>LaoSangamMN</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Red-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Red" id="BYZ-38-t0r" customClass="ViewController" customModule="StopLight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khF-ZW-IXB">
+                                <rect key="frame" x="136" y="307.5" width="102" height="51"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="Change">
+                                    <color key="titleColor" red="1" green="0.98406440019607544" blue="0.0018633338622748852" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cKP-2c-5Fj" kind="show" id="dln-5K-3Qh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="khF-ZW-IXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Xq-Pf-goS"/>
+                            <constraint firstItem="khF-ZW-IXB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9M0-lP-n97"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Red" largeTitleDisplayMode="always" id="08Y-qS-hv5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="sDh-Ud-L4v"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="4KS-5G-V1W">
+            <objects>
+                <viewController title="Yellow" id="cKP-2c-5Fj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jpu-eo-eR7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3De-KG-wnl">
+                                <rect key="frame" x="136" y="307.5" width="102" height="51"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="Change">
+                                    <color key="titleColor" red="0.0" green="0.97800916433334351" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LUu-1A-XqV" kind="show" id="2DP-7S-eyv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3De-KG-wnl" firstAttribute="centerX" secondItem="Jpu-eo-eR7" secondAttribute="centerX" id="dF9-Rk-XbD"/>
+                            <constraint firstItem="3De-KG-wnl" firstAttribute="centerY" secondItem="Jpu-eo-eR7" secondAttribute="centerY" id="gSU-D8-gqh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XGc-If-qqU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1d-Ot-k0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="118.29085457271366"/>
+        </scene>
+        <!--Green-->
+        <scene sceneID="7nM-LF-LhX">
+            <objects>
+                <viewController title="Green" id="LUu-1A-XqV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yHx-lH-X0l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-Vs-3cs">
+                                <rect key="frame" x="149.5" y="307.5" width="76" height="51"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.99936085939407349" green="0.14975595474243164" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1VJ-FH-jp1" kind="show" id="uVO-tK-Rn3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sfg-Vs-3cs" firstAttribute="centerX" secondItem="yHx-lH-X0l" secondAttribute="centerX" id="SqU-ip-Has"/>
+                            <constraint firstItem="sfg-Vs-3cs" firstAttribute="centerY" secondItem="yHx-lH-X0l" secondAttribute="centerY" id="Tno-4m-mts"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ch6-rL-fiC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ibq-gL-eol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ir0-5n-wt6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1VJ-FH-jp1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ID7-y6-ue1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.97692342604430238" blue="0.95132998795103829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vnm-Bu-seK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hqv-UJ-8B6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="118"/>
+        </scene>
+    </scenes>
+</document>
